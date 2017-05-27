@@ -1,0 +1,14 @@
+.heads, .nodes{
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #E9E9E9;
+    border-left: 0 solid #FFFFFF;
+    border-right: 0 solid #FFFFFF;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.beingUsed {
+    background-color: #7BC96F;
+}

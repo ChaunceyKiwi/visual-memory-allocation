@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h2>Visual Memory Allocation</h2>
-        <div class="col-xs-5 col-sm-5 col-md-5" id="pools">
+        <div class="col-xs-4 col-sm-4 col-md-4" id="pools">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12" id="headsPool">
                     <h3> Heads Pool: </h3>
@@ -24,6 +24,22 @@
             </div>
         </div>
 
+        <div class="col-xs-8 col-sm-8 col-md-8" id="code">
+            <div class="col-xs-1 col-sm-1 col-md-1">
+                <span class="glyphicon glyphicon-hand-right" id="PC" aria-hidden="true"></span>
+            </div>
+
+            <div class="col-xs-8 col-sm-8 col-md-8">
+                <h3>Codes</h3>
+                <textarea rows="25" cols="45" id="codeText" style="resize:none"></textarea>
+            </div>
+
+            <div class="col-xs-1 col-sm-1 col-md-1" id="buttons">
+                <span class="glyphicon glyphicon-forward" id="runOneButton" onclick="runOne()"></span><br>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="globalVariable.js"></script>
     <script src="index.js"></script>
     <script src="list.js"></script>

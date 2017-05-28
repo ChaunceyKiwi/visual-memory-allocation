@@ -12,3 +12,16 @@
 .beingUsed {
     background-color: #7BC96F;
 }
+
+#PC {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+#runOneButton {
+    font-size:40px;
+    margin-top: 80px;
+    color: #337AB7;
+    float: right;
+}

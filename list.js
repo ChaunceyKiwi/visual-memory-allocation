@@ -270,6 +270,7 @@ function allocateNode() {
         }
     } else {
         var nodeFree = freeNodeList;
+        setNodeStatus(nodeFree.index, 1);
         freeNodeList = freeNodeList.next;
         return nodeFree;
     }

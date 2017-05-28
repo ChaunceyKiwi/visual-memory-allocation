@@ -1,15 +1,15 @@
-var list1 = ListCreate();
-var list2 = ListCreate();
+function loadCode() {
+    codes = $("#codeText").val().split('\n');
+}
 
-ListAppend(list1, 1);
-ListAppend(list1, 2);
-ListAppend(list1, 3);
-ListAppend(list1, 4);
+function runOne() {
 
-ListAppend(list2, 5);
-ListAppend(list2, 6);
-ListAppend(list2, 7);
-ListAppend(list2, 8);
+    if (codeIsLoaded == 0) {
+        loadCode();
+        codeIsLoaded = 1;
+        PC = 0;
+    }
 
-ListPrint(list1);
-ListPrint(list2);
+    jQuery.globalEval(codes[PC]);
+    setPC(PC + 1);
+}

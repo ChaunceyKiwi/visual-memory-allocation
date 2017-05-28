@@ -35,3 +35,27 @@ function setNodeStatus(id, status) {
         document.getElementById('node'+id).className = 'nodes';
     }
 }
+
+function setPC(newPC) {
+    PC = newPC;
+    document.getElementById("PC").style.marginTop =  60 + 20 * PC + 'px';
+}
+
+$("#codeText").val(
+"var list1 = ListCreate();" + "\n" +
+"var list2 = ListCreate();" + "\n\n" +
+"ListAppend(list1, 1)" + "\n" +
+"ListAppend(list1, 2)" + "\n" +
+"ListAppend(list1, 3)" + "\n" +
+"ListAppend(list1, 4)" + "\n\n" +
+"ListAppend(list2, 5)" + "\n" +
+"ListAppend(list2, 6)" + "\n" +
+"ListAppend(list2, 7)" + "\n" +
+"ListAppend(list2, 8)" + "\n\n" +
+"ListPrint(list1)" + "\n" +
+"ListPrint(list2)" + "\n\n" +
+"ListTrim(list1)" + "\n" +
+"ListAppend(list1, 1)" + "\n" +
+"ListAppend(list1, 2)" + "\n" +
+"ListAppend(list1, 3)"
+);
